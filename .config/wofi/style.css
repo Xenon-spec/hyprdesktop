@@ -1,0 +1,52 @@
+window {
+    margin: 0;
+    border-radius: 10px;
+    border: solid 0px;
+    border-color: rgba(251,87,20,0.7);
+    padding: 0;
+    background-color: RGBA(2, 10, 17, 0.6);
+    color: #ffffff;
+    font-family: "Cantarell";
+    font-size: 17px;
+}
+
+#input {
+    margin: 8px;
+    padding: 6px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.1);
+    color: #ffffff;
+}
+
+#entry {
+    padding: 8px;
+    margin: 4px;
+    border-radius: 5px;
+    border-color: transparent;
+    border: solid 2px;
+    border-color: transparent;
+    color: #ffffff;
+}
+
+#entry:selected {
+    background-color: #5c7070;
+    border: solid 2px;
+    border-color: transparent;
+    color: #000000;
+}
+
+#outer-box, #inner-box, #scroll {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+#img {
+    margin-right: 8px;
+}
+
+image, label {
+    background-color: transparent;
+    box-shadow: none;
+}
