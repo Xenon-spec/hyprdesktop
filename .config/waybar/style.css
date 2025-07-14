@@ -1,0 +1,208 @@
+* {
+    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+window#waybar {
+    background-color: rgba(1,46,65,0);
+    border-radius: 8px;
+    border: solid 0px;
+    border-color: rgba(251,87,20,0.5);
+    color: #ffffff;
+
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+window#waybar.termite {
+    background-color: #3F3F3F;
+}
+
+window#waybar.chromium {
+    background-color: #000000;
+    border: none;
+}
+
+#workspaces {
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color:  rgba(65,78,74, 0.4) ;
+    border: 0px solid rgba(58, 80, 66, 0.4);
+    margin: 3px 3px 3px 3px;
+    border-radius: 30px;
+} 
+
+#workspaces button {
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin: 2px 2px;
+    border-radius: 30px;
+    border: 1px ;
+    color: #000000;
+    transition: all 0.2s linear;
+}
+
+#workspaces button.active {
+    font-weight:900;
+    font-size: xx-large;
+    background-color: rgba(212,126,36,0.5); 
+    border-radius: 20px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    transition: all 0.1s linear;
+}
+
+#workspaces button.urgent {
+    font-weight:900;
+    font-size: xx-large;
+    background-color: #f50b07;
+    border-radius: 20px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 1px solid rgba(251,87,20,1);
+} 
+
+#clock  {
+    padding: 0px 10px;
+    background-color:  rgba(65,78,74, 0.4) ;
+    border: 0px solid  rgba(58, 80, 66, 0.4) ;
+    margin: 3px 3px 3px 3px;
+    border-radius: 20px;
+    color: #000000;
+}
+
+#clock:hover {
+    background-color: rgba(45,54,52,0.4);
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 8px ;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 8px;
+}
+
+#power-profiles-daemon {
+    padding: 0px 12px;
+    background-color:  rgba(65,78,74, 0.4) ;
+    border: 0px solid  rgba(58, 80, 66, 0.4) ;
+    margin: 3px 3px 3px 3px;
+    border-radius: 20px;
+    font-weight: normal;
+    font-style: normal;
+    color: #000000;
+}
+
+#power-profiles-daemon:hover {
+    background-color: rgba(45,54,52,0.4);
+} 
+
+#network {
+    padding: 0px 10px;
+    background-color:  rgba(65,78,74, 0.4) ;
+    border: 0px solid rgba(58, 80, 66, 0.4);
+    margin: 3px 3px 3px 3px;
+    border-radius: 20px;
+    font-weight: normal;
+    font-style: normal;
+    color: #000000;
+}
+
+#network:hover
+{
+    background-color: rgba(45,54,52,0.4);
+}
+
+#pulseaudio {
+    padding: 0px 10px;
+    background-color:  rgba(65,78,74, 0.4) ;
+    border: 0px solid rgba(58, 80, 66, 0.4) ;
+    margin: 3px 3px 3px 3px;
+    border-radius: 20px;
+    font-weight: normal;
+    font-style: normal;
+    color: #000000;
+}
+
+#pulseaudio:hover {
+    background-color: rgba(45,54,52,0.4);
+}
+
+#custom-media {
+   padding: 0px 10px;
+    background-color:  rgba(65,78,74, 0.4) ;
+    border: 0px solid rgba(58, 80, 66, 0.4) ;
+    margin: 3px 3px 3px 3px;
+    border-radius: 20px;
+    font-weight: normal;
+    font-style: normal;
+    color: #000000;
+} 
+
+
+#tray {
+   padding: 0px 13px;
+    background-color:  rgba(65,78,74, 0.4) ;
+    border: 0px solid rgba(58, 80, 66, 0.4) ;
+    margin: 3px 3px 3px 3px;
+    border-radius: 20px;
+    font-weight: normal;
+    font-style: normal;
+    color: #000000;
+}
+
+#custom-power {
+    padding: 0px 9px;
+    background-color:  rgba(65,78,74, 0.4) ;
+    border: 0px solid rgba(58, 80, 66, 0.4);
+    margin: 3px 3px 3px 3px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-size: x-large;
+    color: #000000;
+}
+
+#custom-power:hover {
+    background-color: rgba(45,54,52,0.4);
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
+} 
+
+#mpd {
+    background-color: #66cc99;
+    color: #2a5c45;
+}
+
+#mpd.disconnected {
+    background-color: #f53c3c;
+}
+
+#mpd.stopped {
+    background-color: #90b1b1;
+}
+
+#mpd.paused {
+    background-color: #51a37a;
+}
